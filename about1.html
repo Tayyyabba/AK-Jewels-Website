@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AK Accessories</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cinzel+Decorative:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom, #f8c5d6, #f1c1d6);
+    color: #333;
+    line-height: 1.6;
+    padding-top: 0; /* Adjust this value based on the navbar height */
+}
+        .navbar {
+    background-color: pink;
+
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    unicode-bidi: isolate;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+   
+}
+
+.navbar .brand i {
+    margin-right: 8px;
+    /* Space between the icon and text */
+    color: #2C3E50;
+    /* Matches the brand color */
+    font-size: 1.3em;
+    /* Adjust icon size if needed */
+}
+
+.navbar .brand {
+    font-family: 'Cinzel Decorative', serif;
+    /* or 'Dancing Script' for a cursive effect */
+    font-size: 1.3em;
+    color: #2C3E50;
+    text-decoration: none;
+    padding-left: 3%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #2C3E50;
+    text-decoration: none;
+    font-size: 1em;
+    padding-right: 35px;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+        /* Main Container Styling */
+        main {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+        /* About Section Styling */
+        .about {
+    margin-top: 30px;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+
+.about:hover {
+    transform: translateY(-10px);
+}
+.container {
+    padding-top: 100px; /* Ensure this is greater than or equal to the height of your navbar */
+}
+
+        /* Title Styling */
+        .about h1 {
+            text-align: center;
+            color: #d81b60; /* Deep Pink */
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .about h2 {
+            color: #e91e63; /* Lighter Pink */
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Paragraph Styling */
+        .about p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* List Styling */
+        .about ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        .about li {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .about li strong {
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        /* Button Styling (Optional for future) */
+        .about button {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .about button:hover {
+            background-color: #c2185b;
+        }
+
+        /* Gradient Header */
+        .about h1::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            width: 80px;
+            height: 5px;
+            background: linear-gradient(to right, #e91e63, #d81b60);
+            transform: translateX(-50%);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about {
+                padding: 30px;
+            }
+
+            .about h1 {
+                font-size: 30px;
+            }
+
+            .about h2 {
+                font-size: 24px;
+            }
+
+            .about p {
+                font-size: 16px;
+            }
+
+            .about li {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+ <!-- NAVBAR -->
+ <nav class="navbar">
+    <a href="#" class="brand"><i class="fas fa-gem"></i><b>AK - Accessories</b></a>
+   
+    
+    <ul>
+        <li><a href="#collections"><b>COLLECTIONS</b></a></li>
+        <li><a href="#about"><b>ABOUT</b></a></li>
+        <li><a href="#form1"><b>CONTACT</b></a></li>
+    </ul>
+</nav>
+<div class="container">
+
+
+
+
+    <main>
+        <section class="about">
+            <h1>About Us</h1>
+            <p>Welcome to AK Accessories, where elegance meets craftsmanship. At AK Accessories, we specialize in creating exquisite jewelry pieces that are designed to make every occasion unforgettable. Our collection blends timeless beauty with contemporary flair, offering unique designs that cater to every style and personality.</p>
+
+            <h2>Our Story</h2>
+            <p>Founded with a passion for fine craftsmanship and a love for accessories, AK Accessories is committed to providing high-quality jewelry for every woman and man. Whether you're looking for a statement piece for a special occasion or an everyday accessory to add a touch of sophistication, we offer a wide range of stunning designs to suit all tastes and preferences.</p>
+
+            <h2>Our Vision</h2>
+            <p>At AK Accessories, our vision is simple: to offer accessories that help you express your individual style. We carefully handpick our materials and work closely with skilled artisans to ensure every piece is made with precision and care.</p>
+
+            <h2>Why Choose AK Accessories?</h2>
+            <ul>
+                <li><strong>Quality Craftsmanship:</strong> Each piece is crafted with attention to detail and is made to last.</li>
+                <li><strong>Unique Designs:</strong> From classic to contemporary, our collection features a variety of styles.</li>
+                <li><strong>Affordable Luxury:</strong> We offer luxury accessories without the luxury price tag.</li>
+                <li><strong>Customer Satisfaction:</strong> Our customers are at the heart of everything we do. We strive to provide an exceptional shopping experience with top-notch customer service.</li>
+            </ul>
+
+            <p>Explore our collection today and find the perfect accessory to add a touch of elegance to your look.</p>
+
+            <p>Thank you for choosing AK Accessories – where style is always within reach.</p>
+        </section>
+    </main>
+</div>
+</body>
+</html>

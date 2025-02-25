@@ -1,0 +1,385 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: pink;
+
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    unicode-bidi: isolate;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+}
+
+.navbar .brand i {
+    margin-right: 8px;
+    /* Space between the icon and text */
+    color: #2C3E50;
+    /* Matches the brand color */
+    font-size: 1.3em;
+    /* Adjust icon size if needed */
+}
+
+.navbar .brand {
+    font-family: 'Cinzel Decorative', serif;
+    /* or 'Dancing Script' for a cursive effect */
+    font-size: 1.3em;
+    color: #2C3E50;
+    text-decoration: none;
+    padding-left: 3%;
+}
+.search-container {
+display: flex;
+align-items: center;
+margin: 0 20px; /* Adjusts space around the search bar */
+}
+
+.search-container input {
+padding: 8px;
+font-size: 16px;
+border: none;
+border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+}
+
+.search-container button {
+padding: 8px;
+background-color: #2C3E50; /* Background color for the button */
+color: white; /* Text color */
+border: none;
+border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+cursor: pointer;
+}
+
+.search-container button:hover {
+background-color: #1A242F; /* Darker shade on hover */
+}
+
+.search-container i {
+font-size: 16px; /* Icon size */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #2C3E50;
+    text-decoration: none;
+    font-size: 1em;
+    padding-right: 35px;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.container {
+    padding-top: 100px;
+    text-align: center;
+    height: 600px;
+    background: url(AK_Jewels_Web_Banner_4.webp) no-repeat center center;
+    background-size: 100% 95%;
+    /* Adjust the percentage as needed */
+    transition: background-image 1s ease-in-out;
+
+}
+
+
+
+
+/*collections*/
+
+#collections {
+    align-items: center;
+    text-align: center;
+}
+
+#collections h1 {
+    padding-top: 90px;
+    color: #2C3E50;
+    align-items: center;
+    font-size: 43px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Smaller gap to fit more images */
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.image-container {
+    position: relative;
+    width: 250px;
+    /* Reduced width for four images per row */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    /* Ensures the image takes up the full container width */
+    display: block;
+    border-radius: 10px;
+}
+
+.image-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-title {
+    font-size: 1em;
+    color: #2C3E50;
+    font-weight: bold;
+    margin: 5px 0 3px;
+}
+
+.image-price {
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+
+
+
+/* ABOUT */
+#about {
+    padding-top: 100px;
+    background-color: pink;
+    text-align: center;
+    height: 500px;
+    justify-content: center;
+}
+
+#about h1 {
+
+    color: #2C3E50;
+    align-items: center;
+    font-size: 45px;
+}
+
+#about .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.para1 {
+    padding-top: 30px;
+    padding-left: 230px;
+    color: #2C3E50;
+    font-size: 20px;
+    width: 45%;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.para2 {
+    padding-top: 30px;
+    padding-left: 60px;
+    color: #2C3E50;
+    font-size: 20px;
+    width: 45%;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.transparent-button {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 2px solid #2C3E50;
+    color: #2C3E50;
+    padding: 15px 26px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.transparent-button:hover {
+    background-color: #2C3E50;
+    color: pink;
+}
+
+
+
+/* CONTACT ME FORM */
+#form1 {
+    padding-top: 85px;
+    text-align: center;
+    height: 900px;
+    justify-content: center;
+}
+
+#form1 h1 {
+    color: #2C3E50;
+    ;
+    align-items: center;
+    font-size: 45px;
+}
+
+#form1 input {
+    width: 600px;
+    font-size: 23px;
+    border: none;
+    line-height: 5;
+    border-bottom: 1px solid #ddd;
+
+}
+
+#form1 input:focus {
+    border: none;
+    outline: none;
+}
+
+#form1 textarea {
+    margin-top: 30px;
+    width: 600px;
+    font-size: 23px;
+    border: none;
+    line-height: 3;
+    border-bottom: 1px solid #ddd;
+}
+
+#form1 textarea:focus {
+    border: none;
+    outline: none;
+}
+
+/* BUTTON */
+.button1 {
+
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-left: 310px;
+    border: none;
+
+}
+
+.send-button {
+    background-color: pink;
+    color: #2C3E50;
+    border: none;
+    padding: 19px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    background-color: pink; 
+    color: #2C3E50;
+    padding: 95px; 
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px; 
+}
+
+.footer-section h3 {
+    margin-top: 0; 
+    margin-left: 60px;
+    font-size: 25px;
+}
+.footer-section p{
+    font-size: 21px;
+    margin-left: 50px;
+    margin-top: 16px;
+}
+.footer-section ul {
+    margin-left: 50px;
+    list-style: none; 
+    padding: 0; 
+    display: flex;
+    gap: 30px;
+}
+.footer-section ul li a {
+    
+    color: #2C3E50;
+    text-decoration: none; 
+    font-size: 24px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.footer-section ul li a:hover {
+    background-color: white;
+    color: black; 
+    
+}
+.copyright {
+    background-color: pink; 
+    color: #2C3E50; 
+    text-align: center; 
+    padding: 29px; 
+    font-size: 14px; 
+}
+ /* FOOTER */
+ footer {
+    margin-top: 5%;
+    background-color: pink; 
+    color: #2C3E50;
+    padding: 50px 20px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns content to the top */
+    font-size: 14px; /* Reduced font size */
+}
+
+.footer-section h3 {
+    font-size: 20px; /* Slightly increase font size for headings */
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 16px; /* Slightly larger font size for paragraphs and list items */
+}
+
+.footer-section ul li a {
+    width: 45px; /* Slightly increase social icon size */
+    height: 45px; /* Match height */
+    font-size: 18px; /* Slightly increase icon font size */
+}
+
+.copyright {
+    font-size: 14px; /* Increase font size for copyright text */
+}
